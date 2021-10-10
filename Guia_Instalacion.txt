@@ -1,1 +1,2 @@
-En este archivo se guardaran lo pasos a seguir en la instalación del software.
+1. - En este archivo se guardaran lo pasos a seguir en la instalación del software.
+2. - Contactar al administrador
