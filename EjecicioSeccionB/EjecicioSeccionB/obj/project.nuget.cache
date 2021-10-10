@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ydTiJs91dlZYZT57uNeJN0qcgFWzsTdCLwCI1DzOTcOhtUBqzZ3OEPUtRgZYvwkwu1XPFdC3DjSNxjLn6GjIWQ==",
+  "dgSpecHash": "L/Z1bgJxmXy5z9TRBQd5RFFjRLNuRw+zcve68WDArBH3xWowTB2JfETg1zu3XadxcUBlcpJCSl0ELkkpQfd/7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\alumno\\source\\repos\\EjecicioSeccionB\\EjecicioSeccionB\\EjecicioSeccionB.csproj",
+  "projectFilePath": "C:\\Users\\alumno\\Documents\\GitHub\\Proyectos-UMG\\EjecicioSeccionB\\EjecicioSeccionB\\EjecicioSeccionB.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\alumno\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\alumno\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",
