@@ -1,0 +1,34 @@
+﻿@model EjecicioSeccionB.Models.PersonaModel
+
+<h1>Módulo - Modificación de personas</h1>
+<hr/>
+<div class="row">
+    <div class="col-sm-2">
+        <form asp-action="EditarPersona">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CodigoPersona" />
+            <!--Nombre de la persona-->
+            <div class="form-group">
+                <label asp-for="NombrePersona" class="control-label"></label>
+                <input asp-for="NombrePersona" class="form-control" />
+                <span asp-validation-for="NombrePersona" class="text-danger"></span>
+            </div>
+            <!--Apellido de la persona-->
+            <div class="form-group">
+                <label asp-for="ApellidoPersona" class="control-label"></label>
+                <input asp-for="ApellidoPersona" class="form-control" />
+                <span asp-validation-for="ApellidoPersona" class="text-danger"></span>
+            </div>
+            <!--Edad de la persona-->
+            <div class="form-group">
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" class="form-control" />
+                <span asp-validation-for="Edad" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type ="submit" value="Actualizar" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+<a asp-action="Index">Regresar</a>

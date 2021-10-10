@@ -1,0 +1,49 @@
+﻿@model IEnumerable<EjecicioSeccionB.Models.PersonaModel>
+ 
+    @{
+     ViewData["Title"] = "Personas";
+    }
+
+    <h1> Módulo Principal ** Personas</h1>
+    <p>
+        <a asp-action="Personas">Crear nueva pesona</a>
+    </p>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model=>model.NombrePersona)
+                </th>          
+            
+                <th>
+                    @Html.DisplayNameFor(model=>model.ApellidoPersona)
+                </th>            
+           
+                <th>
+                    @Html.DisplayNameFor(model=>model.EstadoPersona)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var registros in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.NombrePersona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.ApellidoPersona)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => registros.EstadoPersona)
+                </td>
+
+                <td>
+                    <a asp-action="ConsultaPersonas" asp-route-id="@registros.CodigoPersona">Consultar</a> |
+                    <a asp-action="EditarPersona" asp-route-id="@registros.CodigoPersona">Editar</a> |
+                    <a asp-action="BorraPersona" asp-route-id="@registros.CodigoPersona">Borrar</a> |
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>

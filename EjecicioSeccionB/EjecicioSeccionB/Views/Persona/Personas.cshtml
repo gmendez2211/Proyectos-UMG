@@ -1,0 +1,40 @@
+﻿
+@model  EjecicioSeccionB.Models.PersonaModel
+
+<h1>Módulo - Creación de personas</h1>
+
+<hr/>
+
+<div class="row">
+
+    <div class="col-md-4">
+        <form asp-action="Personas">
+            <!--Muestra en la pagina la etiqueta y objeto para recibir datos para el nombre de la persona-->
+            <div class="form-group">
+                <label asp-for="NombrePersona" class="control-label"></label>
+                <input asp-for="NombrePersona" class="form-control" />
+                <span asp-validation-for="NombrePersona" class="text-danger"></span>
+            </div>
+            <!--Muestra en la pagina la etiqueta y objeto para recibir datos para el apellido de la persona-->
+            <div class="form-group">
+                <!--Muestra en la pagina la etiqueta y objeto para recibir datos para el nombre del cliente-->
+                <label asp-for="ApellidoPersona" class="control-label"></label>
+                <input asp-for="ApellidoPersona" class="form-control" />
+                <span asp-validation-for="ApellidoPersona" class="text-danger"></span>
+            </div>
+            <!--Muestra en la pagina la etiqueta y objeto para recibir datos para el apellido de la persona-->
+            <div class="form-group">
+                <!--Muestra en la pagina la etiqueta y objeto para recibir datos para el nombre del cliente-->
+                <label asp-for="Edad" class="control-label"></label>
+                <input asp-for="Edad" class="form-control" />
+                <span asp-validation-for="Edad" class="text-danger"></span>
+            </div>
+
+            <!--Creación del submit-->
+            <div class="form-group">
+                <input type="submit" value="Crear Persona" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+
+</div>
