@@ -14,6 +14,7 @@ namespace EjecicioSeccionB.Mapper
         public PersonaMapper()
         {
             CreateMap<PersonaModel, PersonaDto>().ReverseMap();
+            CreateMap<PersonaModel, PersonaSaveDto>().ReverseMap();
         }
     }
 }
